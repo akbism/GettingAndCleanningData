@@ -120,17 +120,16 @@ The run_analysis.R code tries to create a dataset, which contains columns with t
 	* Normalized standard deviation value of frequency domain signals calculated from applying Fast Fourier Transform (FFT) to tBodyBodyGyroJerkMag-std()
 
 ### C. Steps to form the dataset
-* 1. Read subject from test and train dataset and merge to create a single subject dataset.
-* 2. Set the column name of the subject data set "subject".
-* 3. Read features and activity labels.
-* 4. Read features data values- test and train dataset- captured for subjects. Merge the test and train datasets.
-* 5. Set the column name of the features value dataset (of step 4.) using features.
-* 6. Read the activities for each line item- test and train datasets. Merge the test and train datasets.
-* 7. Set the column name of the activity dataset as "activity"
-* 8. Filter columns such that only mean() and std()  columns are chosen. 
-* 9. Replace the activity codes with activity labels for all observations
-* 10. Calculate mean against subject and activity combination
-* 11. Finally, the script creates a tidy data set with the average of each measurement for each activity and each subject. The result is saved as X_final_tidied.txt, a 180x68 data frame. The first column contains subject IDs, the second column contains activity and then the averages for each of the 66 attributes are in columns 3 to 68. There are 30 subjects and 6 activities, totally180 rows in this data set with averages.
- 
+* 1 Read test and train files and merge to create a total dataset. 
+* 2 Read and assign appropriate variable name for each observation  
+* 3 Read activity labels
+* 4 Filter the required columns from the available columns of the dataset with features values.
+* 5 Combine subject, activity and features value dataset
+* 6 Replace activity codes with the labels
+* 7 Calculate mean values for each selected features against the combination of subject and acitivity
+* 8 Write the output to Output.txt file- a tidy data set (180x68 data frame) with the average of each measurement for each activity and each subject. 
+The first column contains subject IDs, the second column contains activity and then the averages for each of the 66 attributes are in columns 3 to 68. 
+There are 30 subjects and 6 activities, totally180 rows in this data set with averages.
+
 
 

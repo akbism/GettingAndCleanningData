@@ -1,5 +1,5 @@
-GETTING AND CLEANING DATA COURSE PROJECT
-## Tidy Data: file run_analysis.R
+## GETTING AND CLEANING DATA COURSE PROJECT
+## Read Me: file run_analysis.R
 ===========================================
 Amar Kumar, Coursera
 ===========================================
@@ -37,4 +37,4 @@ Details about each variable has been explained in the file codeBook.md.
 * Calculate mean values for each selected features against the combination of subject and acitivity
 * Write the output to Output.txt file.
 
-#### Hence,  the script provides a tidy data set (180x68 data frame) with the average of each measurement for each activity and each subject. The first column contains subject IDs, the second column contains activity and then the averages for each of the 66 attributes are in columns 3 to 68. There are 30 subjects and 6 activities, totally180 rows in this data set with averages.
+###### Hence,  the script provides a tidy data set (180x68 data frame) with the average of each measurement for each activity and each subject. The first column contains subject IDs, the second column contains activity and then the averages for each of the 66 attributes are in columns 3 to 68. There are 30 subjects and 6 activities, totally180 rows in this data set with averages.
